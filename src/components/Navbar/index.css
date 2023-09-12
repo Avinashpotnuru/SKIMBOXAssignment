@@ -1,0 +1,161 @@
+nav {
+    height: 10vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.logo ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    /* margin: 10px 0px; */
+
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links p {
+    margin-right: 10px;
+}
+
+.logo ul div {
+    margin: 0px 10px;
+}
+
+
+
+.login_block {
+    display: flex;
+    align-items: center;
+}
+
+.login_block button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    margin: 0px 20px;
+}
+
+.toggle {
+    display: none;
+}
+
+.subnav {
+    background-color: blueviolet;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.block3 a {
+    display: none;
+}
+
+.block3 {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:500px) {
+    nav {
+
+        justify-content: space-between;
+        /* padding: 0px 20px; */
+        /* padding: 0px 10px; */
+
+        background-color: aquamarine;
+
+    }
+
+    .logo ul {
+
+        display: none;
+        /* margin: 10px 0px; */
+
+    }
+
+    .logo h1 {
+        margin-left: 20px;
+
+    }
+
+    .login_block {
+        display: none;
+
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        top: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        background-color: aqua;
+    }
+
+    .nav-menu.active {
+        /* background: #19191a; */
+        top: 10vh;
+        opacity: 1;
+        transition: all 0.6s ease;
+        z-index: 1;
+    }
+
+    .block3 {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+    }
+
+    .block3 a {
+        display: block;
+        margin: 0px 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+
+    }
+
+    /* .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+    } */
+
+
+
+}
