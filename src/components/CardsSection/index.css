@@ -1,0 +1,97 @@
+.tabs {
+    display: none;
+}
+
+.card-mob {
+    display: none;
+}
+
+.card-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1px 0px;
+    border-top: 2px gray solid;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 1) 77%,
+            rgba(188, 204, 205, 1) 87%,
+            rgba(176, 235, 237, 1) 97%);
+}
+
+.plan {
+    display: flex;
+
+    border: 3px skyblue solid;
+
+    border-radius: 30px;
+    padding: 2px !important;
+    margin: 40px 0px;
+}
+
+.pay-active {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+.plan p {
+    padding: 13px !important;
+    margin: 0px !important;
+    font-weight: 700;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    gap: 30px;
+
+    margin: 20px 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .card-mob {
+        display: block;
+    }
+
+    .card-des {
+        display: none;
+    }
+
+    .tabs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .tabs button {
+        border: solid 2px grey;
+    }
+
+    .tab {
+        padding: 20px 0px;
+    }
+
+    .tab-active {
+        border-top: 6px solid skyblue !important;
+    }
+
+    .tabs button:first-child {
+        border-left: none;
+        border-right: none;
+    }
+
+    .tabs button:last-child {
+        border-left: none;
+        border-right: none;
+    }
+}

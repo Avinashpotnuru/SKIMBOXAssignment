@@ -1,0 +1,147 @@
+.price {
+    display: flex;
+    padding: 0px 20px;
+}
+
+.price div {
+    padding: 20px 3px;
+    font-weight: bold;
+}
+
+.content-head {
+    padding: 20px;
+}
+
+.content-head h3 {
+    font-size: 20px;
+}
+
+.payment {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.content-head p {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 1px 0px;
+}
+
+.offer {
+    background-color: #effbf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-left: none;
+    border-right: none;
+}
+
+.offer h4 {
+    font-weight: 700;
+}
+
+.keypoints {
+    list-style: none;
+
+    padding: 0px;
+}
+
+.item {
+    display: flex;
+
+    align-items: center;
+
+    margin-right: 0px;
+    padding: 1px 0px;
+}
+
+.item p {
+    padding-left: 10px;
+    font-weight: 500 !important;
+}
+
+.content-2 {
+    padding: 20px;
+}
+
+.content-2 p {
+    font-weight: bold;
+}
+
+.icon {
+    color: aqua;
+}
+
+.content-2 button {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: none;
+    margin: 0px 20px;
+    width: 90%;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 380px;
+    position: relative;
+
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.popular {
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 0px;
+}
+
+.popular p {
+    padding: 5px 20px !important;
+    background: linear-gradient(90deg,
+            rgba(162, 247, 237, 1) 57%,
+            rgba(92, 254, 171, 1) 83%);
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+}
+
+.bordered {
+    border: 2px skyblue solid;
+}
+
+@media screen and (max-width: 600px) {
+    .content-head {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+        border-radius: 0%;
+        border: none;
+    }
+
+    .popular {
+        display: none;
+    }
+
+    .offer {
+        border: 3px #a5e4cc solid;
+    }
+}

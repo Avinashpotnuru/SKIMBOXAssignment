@@ -1,17 +1,24 @@
 import React, { useState } from "react";
 
 import { FaBars, FaTimes } from "react-icons/fa";
+
 import { BsChevronDown } from "react-icons/bs";
+
+import { GiPaperBagFolded } from "react-icons/gi";
 
 import "./index.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div>
+    <>
       <nav>
         <div className="logo">
-          <h1>Shopify</h1>
+          <div className="logo1">
+            <GiPaperBagFolded className="bag" />
+            <h1>Shopify</h1>
+          </div>
+
           <ul>
             <div className="links">
               <p>Solutions</p>
@@ -52,7 +59,7 @@ const Navbar = () => {
           </div>
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 
